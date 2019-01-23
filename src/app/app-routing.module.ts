@@ -3,14 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { TravelComponent } from './travel/travel.component';
 import { RecComponent } from './rec/rec.component';
 
-const routes: Routes = [
-  {path:'',redirectTo:'main',pathMatch:'full'},
- { path: 'main', component: TravelComponent},
- {path:'main/:id',component:RecComponent}
-];
+const routes: Routes = [];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [],
+  exports: []
 })
 export class AppRoutingModule { }
