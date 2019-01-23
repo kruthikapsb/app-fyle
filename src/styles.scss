@@ -1,0 +1,24 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.grid {}
+
+.grid::before,
+.grid::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.grid__item {
+    box-sizing: border-box;
+    float: left;
+    height: 50vw;
+    padding: 2em;
+    width: 50vw;
+}
+
+@for $i from 1 through 8 {
+  .grid__item:nth-child(#{$i}) {
+    background-color: hsl(360 / 72 * $i, 100%, 60%);
+  }
+}

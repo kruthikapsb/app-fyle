@@ -1,0 +1,83 @@
+
+<div #grid class="grid">
+    <div class="page-header" style="height:50px;">
+        <button (click)="scroll(grid)" style="background-color:transparent; border-color:transparent;">
+            <img src="../../assets/travel.png" height="40"/>
+        </button>
+        <button (click)="scroll(second)" style="background-color:transparent; border-color:transparent;">
+            <img src="../../assets/foo.jpg" height="40"/>
+        </button>
+        <button (click)="scroll(third)" style="background-color:transparent; border-color:transparent;">
+         <img src ="../../assets/walk.png" height="40">
+        </button>
+        <a routerLink="../main/Hello"><img class="icon" src="../../assets/vendetta.jpg" alt="Test" height="40"></a>
+        
+    </div>
+  <div class="row">
+    <div class="col-md-8 custom">
+  <h1 style="text-align: center;"><strong>A TRAVELS YEARBOOK</strong></h1>
+  <p>
+  Read Fodor's reviews to find the best travel destinations,hotels and restuarents.Plan your trip onlne with Fodor's.
+    India bristles with mind-stirring mix of landscapes and cultural traditions.Your journey through this intoxicating country will
+    blaze in your memory long after you've left it's shores.</p>
+    </div>
+  </div>
+</div>
+<div #second class="second">
+    <div class="row">
+        <div class="col-6 col-md-4" style="top:50ox;">
+          <h3 style="color:green;font-size: 40px;text-align:right;">LOVE, FOOD, CHEFS, RECIPES& THE FISH IN SEA</h3>
+      </div>
+</div> 
+  
+  <div class="col-sm-6 col-md-5 col-lg-6" style="text-align:center;top:200px;position:fstatic;">
+  <button style="background-color:transparent; border-color:transparent;" class="meow" (click)="onSelect()">
+  <img src ="../../assets/soups.png" height="70"><p style="text-align:center;">Soups</p>
+</button>
+<button style="background-color:transparent; border-color:transparent;"class= "meow" (click)="onSelect()">
+    <img src ="../../assets/maindish.png" height="70"><p style="text-align:center;">Main Courses</p>
+  </button>
+  <button style="background-color:transparent; border-color:transparent;"class="meow" (click)="onSelect()">
+      <img src ="../../assets/side.png" height="70"><p style="text-align:center;">Side Dishes</p>
+    </button>
+    <button style="background-color:transparent; border-color:transparent;" class="meow" (click)="onSelect()">
+        <img src ="../../assets/salad.png" height="70"><p style="text-align:center;">Salads</p>
+      </button>
+      <button style="background-color:transparent; border-color:transparent;"class="meow" (click)="onSelect()">
+          <img src ="../../assets/pies.png" height="70"><p style="text-align:center;">Pies</p>
+        </button>
+        <button style="background-color:transparent; border-color:transparent;"class="meow" (click)="onSelect()">
+            <img src ="../../assets/des.jpg" height="70"><p style="text-align:center;">Deserts</p>
+          </button>
+          </div>
+          <div class="row">
+          <div  class="col-md-3 offset-md-3" [hidden]="IsHidden">
+            <div>
+              <img src ="../../assets/yummy.jpg" height="150">
+              <img src ="../../assets/yumm2.jpg" height="150">
+              </div>
+      </div>
+          </div>   
+            </div>
+
+<div #third third class="third" >
+  <div class="bot">
+  <h1>LET'S WALK THE DISTANCE</h1>
+  <h2 style="color:black;"><strong>AND CHAT,CONNECT AND COFFEE OVER IT</strong></h2>
+  <a href="https://twitter.com/"><img class="icon" src="../../assets/tw.png" alt="Test"></a>
+  <a href="https://www.facebook.com/"><img class="icon" src="../../assets/fb.png" alt="Test"></a>
+  <a href="https://www.linkedin.com/"><img class="icon" src="../../assets/ln.png" alt="Test"></a>
+  <a href="https://www.google.com/"><img class="icon" src="../../assets/goo.png" alt="Test"></a>
+  </div>
+  </div>
+<footer style="background-color:rgb(85, 8, 8);height:150px;text-align:center;">
+  <br>
+<h5 style="color:white;text-align:center;">10,3rd FlOOR PHOENIX CRESCENT,RESTHOUSE ROAD,BANGALORE 560001</h5>
+<h5 style="color:white;text-align: center;">PHONE +91-80 4098 6191</h5>
+<a (click)="scroll(grid)">
+    <span class="glyphicon glyphicon-chevron-up" style="text-align: center;"></span>
+ </a>
+</footer>
+
+
+
